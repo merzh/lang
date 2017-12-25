@@ -43,7 +43,7 @@
 							<nav class="nav">
 								<ul class="nav__list">
 									<li class="nav__item"><a class="nav__link active" href="#">Лента        </a></li>
-									<li class="nav__item"><a class="nav__link" href="#">Уроки        </a></li>
+									<li class="nav__item"><a class="nav__link" href="lesson.html">Уроки        </a></li>
 									<li class="nav__item"><a class="nav__link" href="#">Преподаватели        </a></li>
 									<li class="nav__item"><a class="nav__link" href="#">Упражнения        </a></li>
 									<li class="nav__item"><a class="nav__link" href="#">FAQ</a></li>
@@ -56,6 +56,11 @@
 			<div class="page__bg lessons">   
 				<div class="container">
 					<div class="row">
+						<div class="col-sm-12">
+							<div class="alert">
+								<div class="fa fa-exclamation-circle"></div>Проблемы с интернетом. Проверьте соединение
+							</div>
+						</div>
 						<div class="col-md-7">
 							<div class="lessons__info">
 								<h2 class="lessons__title">Урок: Аул Дом</h2>
@@ -64,12 +69,76 @@
 							<div class="lessons__board white">
 								<div class="lessons__board-title">Интерактивная доска</div>
 								<div class="lessons__board-content">
-									<h3>Жаттыгулар</h3>
-									<div class="lessons__board-item">
-										<h5>1. Дурыс курастырылган сойлемди танданыз</h5>
-									</div>
-									<div class="lessons__board-item">
-										<h5>2. Сойлемдердин дурыс</h5>
+									<div class="carousel slide" id="myCarousel">
+										<div class="carousel-inner">
+											<div class="active item">
+												<h3>Жаттыгулар 1</h3>
+												<div class="lessons__board-item">
+													<h5>1. Дурыс курастырылган сойлемди танданыз</h5>
+													<div class="form-group">
+														<div class="checkbox">
+															<label>
+																<input type="radio" cheked>Казахстаннын астанасы - Астанаю
+															</label>
+															<label>
+																<input type="radio">Казахстаннын астанасы - Алматы
+															</label>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="checkbox">
+															<label>
+																<input type="radio" cheked>Казахстаннын астанасы - Астанаю
+															</label>
+															<label>
+																<input type="radio">Казахстаннын астанасы - Алматы
+															</label>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="checkbox">
+															<label>
+																<input type="radio" cheked>Казахстаннын астанасы - Астанаю
+															</label>
+															<label>
+																<input type="radio">Казахстаннын астанасы - Алматы
+															</label>
+														</div>
+													</div><a class="button button-tr" href="#">Проверить</a>
+												</div>
+												<div class="lessons__board-item">
+													<h5>2. Сойлемдердин дурыс</h5>
+													<div class="form-group df">
+														<input class="form-control success" type="text" value="Мадонна Алматыда"><a class="lessons__board-link success" href="#">туып оскен</a>
+													</div>
+													<div class="form-group df">
+														<input class="form-control" type="text" value="Казахстан футболдан"><a class="lessons__board-link" href="#">Астана</a>
+													</div>
+													<div class="form-group df">
+														<input class="form-control errors" type="text" value="Казахстаннын астанасы"><a class="lessons__board-link errors" href="#">алем чемпионы</a>
+													</div>
+												</div>
+											</div>
+											<div class="item">
+												<h3>Жаттыгулар 2</h3>
+												<div class="lessons__board-item">
+													<h5>1. Дурыс курастырылган сойлемди танданыз</h5>
+												</div>
+												<div class="lessons__board-item">
+													<h5>2. Сойлемдердин дурыс</h5>
+												</div>
+											</div>
+											<div class="item">
+												<h3>Жаттыгулар 3</h3>
+												<div class="lessons__board-item">
+													<h5>1. Дурыс курастырылган сойлемди танданыз</h5>
+												</div>
+												<div class="lessons__board-item">
+													<h5>2. Сойлемдердин дурыс</h5>
+												</div>
+											</div>
+										</div>
+										<div class="carousel-nav"><a class="left" href="#myCarousel" data-slide="prev"><i class="fa fa-angle-left"></i></a><a class="right" href="#myCarousel" data-slide="next"><i class="fa fa-angle-right"></i></a></div>
 									</div>
 								</div>
 							</div>
@@ -106,6 +175,7 @@
 							</div>
 						</div>
 						<div class="col-md-5">
+							<div class="lessons__time">Осталось времени: 23:12</div>
 							<div class="lessons__video">
 								<div id="video_player_box">
 									<video id="video">
@@ -119,10 +189,23 @@
 										</div>
 									</div>
 								</div>
-								<div class="lessons__video-small">
-									<video id="video" autoplay>
-										<source src="audio/360.mp4">
-									</video>
+								<div class="lessons__video-small"></div>
+							</div>
+							<div class="slider-nav white">
+								<div class="slider-head">
+									<div class="slider-title">Список слайдов</div>
+									<div class="slider-show"><i class="fa fa-angle-up"></i></div>
+								</div>
+								<div class="slider-list">
+									<ul>
+										<li><a href="#"> <strong>1. </strong>Танысу жане амандасу</a></li>
+										<li><a href="#"><strong>2. </strong>Танысу жане амандасу</a></li>
+										<li><a href="#"><strong>3. </strong>Танысу жане амандасу</a></li>
+										<li><a href="#"><strong>4. </strong>Танысу жане амандасу                                </a></li>
+										<li><a href="#"><strong>5. </strong>Танысу жане амандасу                                </a></li>
+										<li><a href="#"><strong>6. </strong>Танысу жане амандасу                                </a></li>
+										<li><a href="#"><strong>7. </strong>Танысу жане амандасу</a></li>
+									</ul>
 								</div>
 							</div>
 							<div class="lesson__tabs">
@@ -132,7 +215,78 @@
 									<li><a data-toggle="tab" href="#panel3"> <i class="fa fa-headphones"></i>Аудио-записей:  3</a></li>
 								</ul>
 								<div class="tab-content white">
-									<div class="tab-pane fade in active" id="panel1"></div>
+									<div class="tab-pane fade in active" id="panel1">
+										<div class="chat">
+											<div class="chat__wrap">
+												<div class="chat__teacher">
+													<div class="chat__img"><img src="img/teacher.png" alt="Маметова Алия"></div>
+													<div class="chat__content">
+														<div class="chat__head">
+															<div class="chat__head-title">Маметова Алия</div>
+															<div class="chat__head-date">22 ноября 12.05</div>
+														</div>
+														<div class="chat__text">
+															<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit autem aliquid libero quam vero ea nisi in aut accusantium praesentium!</p>
+														</div>
+													</div>
+												</div>
+												<div class="chat__student">
+													<div class="chat__img"><img src="img/profile.jpg" alt="Калдыбаев Тимур"></div>
+													<div class="chat__content">
+														<div class="chat__head">
+															<div class="chat__head-title">Калдыбаев Тимур</div>
+															<div class="chat__head-date">22 ноября 12.01</div>
+														</div>
+														<div class="chat__text">
+															<p>Как дела?</p>
+														</div>
+													</div>
+												</div>
+												<div class="chat__student">
+													<div class="chat__img"><img src="img/profile.jpg" alt="Калдыбаев Тимур"></div>
+													<div class="chat__content">
+														<div class="chat__head">
+															<div class="chat__head-title">Калдыбаев Тимур</div>
+															<div class="chat__head-date">22 ноября 12.02</div>
+														</div>
+														<div class="chat__text">
+															<p>Всё хорошо, как у Вас?</p>
+														</div>
+													</div>
+												</div>
+												<div class="chat__teacher">
+													<div class="chat__img"><img src="img/teacher.png" alt="Маметова Алия"></div>
+													<div class="chat__content">
+														<div class="chat__head">
+															<div class="chat__head-title">Маметова Алия</div>
+															<div class="chat__head-date">22 ноября 12.05</div>
+														</div>
+														<div class="chat__text">
+															<p>Как дела?</p>
+														</div>
+													</div>
+												</div>
+												<div class="chat__teacher">
+													<div class="chat__img"><img src="img/teacher.png" alt="Маметова Алия"></div>
+													<div class="chat__content">
+														<div class="chat__head">
+															<div class="chat__head-title">Маметова Алия</div>
+															<div class="chat__head-date">22 ноября 12.05</div>
+														</div>
+														<div class="chat__text">
+															<p> Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Большой переулка образ то предупредила рот несколько напоивший пунктуация языком, маленькая но, сбить, лучше страна свою, последний скатился алфавит. Не проектах, заголовок большого его, они она всемогущая предложения продолжил текстов грамматики, от всех предупредила всеми. Снова живет встретил, диких точках на берегу.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="chat__input">
+												<div class="input-group">
+													<input class="form-control" type="text" placeholder="Сообщение...."><span class="input-group-btn">
+														<button class="btn button-blue" type="submit"><i class="fa fa-paper-plane"></i></button></span>
+												</div>
+											</div>
+										</div>
+									</div>
 									<div class="tab-pane fade in" id="panel2">
 										<h3>Рекомендация 1:</h3>
 										<p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык ...<a href="#">Смотреть</a></p>
@@ -145,12 +299,73 @@
 										<div class="audio__player">
 											<div class="audio__item">
 												<audio id="audio" src="audio/d1725da8e6e3.mp3" type="audio/mp3"></audio>
+												<div class="audio__control" id="audio_control">
+													<button class="playPause" id="playPause"><i class="fa fa-play"></i></button>
+													<div class="audio__line">
+														<div class="audio__text"> 
+															<p>Название данной аудио</p><span id="curTime">00:00</span>
+														</div>
+														<input id="sliderLine" type="range" min="0" max="100" value="0" step="1">
+													</div>
+													<div class="audio__volume">
+														<button id="muteUnmute"><i class="fa fa-volume-down"></i></button>
+														<input id="sliderVolume" type="range" min="0" max="100" value="100" step="1">
+													</div>
+												</div>
 											</div>
 											<div class="audio__item">
 												<audio id="audio" src="audio/d1725da8e6e3.mp3" type="audio/mp3"></audio>
+												<div class="audio__control" id="audio_control">
+													<button class="playPause" id="playPause"><i class="fa fa-play"></i></button>
+													<div class="audio__line">
+														<div class="audio__text"> 
+															<p>Название данной аудио</p><span id="curTime">00:00</span>
+														</div>
+														<input id="sliderLine" type="range" min="0" max="100" value="0" step="1">
+													</div>
+													<div class="audio__volume">
+														<button id="muteUnmute"><i class="fa fa-volume-down"></i></button>
+														<input id="sliderVolume" type="range" min="0" max="100" value="100" step="1">
+													</div>
+												</div>
 											</div>
 											<div class="audio__item">
 												<audio id="audio" src="audio/d1725da8e6e3.mp3" type="audio/mp3"></audio>
+												<div class="audio__control" id="audio_control">
+													<button class="playPause" id="playPause"><i class="fa fa-play"></i></button>
+													<div class="audio__line">
+														<div class="audio__text"> 
+															<p>Название данной аудио</p><span id="curTime">00:00</span>
+														</div>
+														<input id="sliderLine" type="range" min="0" max="100" value="0" step="1">
+													</div>
+													<div class="audio__volume">
+														<button id="muteUnmute"><i class="fa fa-volume-down"></i></button>
+														<input id="sliderVolume" type="range" min="0" max="100" value="100" step="1">
+													</div>
+												</div>
+											</div>
+										</div>
+										<hr>
+										<div class="audio__record">
+											<div class="audio__record-wrap">
+												<div><a class="button button-red" href="#"> <i class="fa fa-microphone"></i>Запись</a><a class="button button-tr" href="#"> <i class="fa fa-stop"></i>Стоп</a></div><a class="button button-tr button-save" href="#">Сохранить</a>
+											</div>
+											<div class="audio__item">
+												<audio id="audio" src="audio/d1725da8e6e3.mp3" type="audio/mp3"></audio>
+												<div class="audio__control" id="audio_control">
+													<button class="playPause" id="playPause"><i class="fa fa-play"></i></button>
+													<div class="audio__line">
+														<div class="audio__text"> 
+															<p>Название данной аудио</p><span id="curTime">00:00</span>
+														</div>
+														<input id="sliderLine" type="range" min="0" max="100" value="0" step="1">
+													</div>
+													<div class="audio__volume">
+														<button id="muteUnmute"><i class="fa fa-volume-down"></i></button>
+														<input id="sliderVolume" type="range" min="0" max="100" value="100" step="1">
+													</div>
+												</div>
 											</div>
 										</div>
 									</div>
